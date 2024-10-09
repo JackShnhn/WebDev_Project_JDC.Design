@@ -71,19 +71,20 @@ input {
   width: 300px;
 }
 
-form div {
+/* Style for the radio button group */
+.radio-group {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px; /* Add some space between each radio button */
+  justify-content: space-between; /* Ensures the label and radio button are spaced out */
+  align-items: center; /* Aligns label and radio button vertically */
+  margin-bottom: 10px;
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the div on the page */
 }
 
-form label {
-  margin-left: 10px; /* Add space between radio buttons and labels */
-}
-
+/* Ensure radio buttons are smaller and aligned properly */
 input[type="radio"] {
-  width: auto; /* Prevents the radio buttons from being too large */
-  margin-right: 10px; /* Adds space between the radio button and label */
+  width: auto; /* Keeps radio buttons at default size */
+  margin-left: 10px; /* Adds space between label and radio button */
+}
 }
 
