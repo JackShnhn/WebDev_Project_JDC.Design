@@ -36,3 +36,9 @@ img {
   background-color: #e0e7e0;
   color: #000000;
 }
+
+form {
+  text-align:center;
+  padding: 15px 15px;
+  
+}
