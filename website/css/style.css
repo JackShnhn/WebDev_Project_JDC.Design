@@ -63,9 +63,15 @@ input {
   font-weight: 500;
   width: 300px;
 }
+#boxes {
+  padding: 0px;
+  
+
+
+}
 
 #description {
   text-align:center;
-  box-sizing: 300px 300px;
+  box-sizing: 600px 600px;
 
 }
