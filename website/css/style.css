@@ -62,7 +62,7 @@ form {
   font-size:14pt;
 
 }
-/*
+
 input {
   padding: 2px;
   box-shadow: 3px 3px 5px grey;
@@ -70,15 +70,7 @@ input {
   font-weight: 500;
   width: 300px;
 }
-#boxes {
+.boxes {
   padding: 0px;
-
-
-
 }
 
-#description {
-  text-align:center;
-  box-sizing: 600px 600px;
-
-} */
