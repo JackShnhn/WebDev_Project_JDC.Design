@@ -49,3 +49,17 @@ form {
   padding: 15px 15px;
   
 }
+
+input {
+  padding: 2px;
+  box-shadow: 3px 3px 5px grey;
+  font-size: 18px;
+  font-weight: 500;
+  width: 300px;
+}
+
+#description {
+  text-align:center;
+  box-sizing: 300px 300px;
+
+}
