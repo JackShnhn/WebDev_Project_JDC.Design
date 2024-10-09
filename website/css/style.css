@@ -71,8 +71,19 @@ input {
   width: 300px;
 }
 
-.boxes{
-  padding: 0px;
-  font-size:70px;
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Add some space between each radio button */
+}
+
+form label {
+  margin-left: 10px; /* Add space between radio buttons and labels */
+}
+
+input[type="radio"] {
+  width: auto; /* Prevents the radio buttons from being too large */
+  margin-right: 10px; /* Adds space between the radio button and label */
 }
 
