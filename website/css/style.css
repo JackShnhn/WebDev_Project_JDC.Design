@@ -10,6 +10,12 @@ body {
   font-style: normal;
 }
 
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header{
 	text-align:center;
 }
@@ -22,7 +28,7 @@ img {
 
 .topnav {
   overflow: hidden;
-  background-color: lightskyblue;
+  background-color: darkcyan;
 }
 
 .topnav a {
@@ -35,12 +41,12 @@ img {
 }
 
 .topnav a:hover {
-  background-color: darkcyan;
+  background-color: lightseagreen;
   color: black;
 }
 
 .topnav a.active {
-  background-color: darkcyan;
+  background-color: lightseagreen;
   color: #000000;
 }
 
