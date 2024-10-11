@@ -76,7 +76,7 @@ input {
   font-size:70px;
 
 }
-.john_pic{
+#john_pic{
   display: block;
   margin-left: auto;
   width: 50%;
