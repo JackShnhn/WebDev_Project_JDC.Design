@@ -104,7 +104,9 @@ input[type="radio"] {
   text-align:right;
 
 }
+/* colour of submit button changes when you hover over it doesnt work
 #submit:hover{
   background-color:blue;
 }
+*/
 
