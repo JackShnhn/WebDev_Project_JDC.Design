@@ -85,3 +85,9 @@ input {
   margin: 0 auto; /* Centers the div on the page */
 }
 
+/* Ensure radio buttons are smaller and aligned properly */
+input[type="radio"] {
+  width: auto; /* Keeps radio buttons at default size */
+  margin-left: 10px; /* Adds space between label and radio button */
+}
+
