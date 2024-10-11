@@ -78,8 +78,9 @@ input {
 }
 #john_pic{
   display: block;
-  margin-left: auto;
+  margin-right: auto;
   width: 50%;
+  height:auto;
   padding: 5px;
   border-radius:3px ;
 }
