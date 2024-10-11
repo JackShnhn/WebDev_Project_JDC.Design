@@ -76,3 +76,12 @@ input {
   font-size:70px;
 }
 
+.radio-group {
+  display: flex;
+  justify-content: space-between; /* Ensures the label and radio button are spaced out */
+  align-items: center; /* Aligns label and radio button vertically */
+  margin-bottom: 10px;
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the div on the page */
+}
+
