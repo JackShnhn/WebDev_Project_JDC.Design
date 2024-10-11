@@ -99,9 +99,12 @@ input[type="radio"] {
   width: auto; /* Keeps radio buttons at default size */
   margin-left: 10px; /* Adds space between label and radio button */
 }
+/*Trying to get text on about page to go to right of image*/
 #bio_graph{
   text-align:right;
 
-
+}
+#submit:hover{
+  background-color:blue;
 }
 
