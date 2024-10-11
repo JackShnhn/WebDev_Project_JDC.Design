@@ -100,7 +100,7 @@ input[type="radio"] {
   margin-left: 10px; /* Adds space between label and radio button */
 }
 #bio_graph{
-  margin-left:auto;
+  float:right;
 
 
 }
