@@ -1,7 +1,7 @@
-.logo{
+.logo h1{
   text-align: center;
-
-  
+  font-style: normal;
+  color: grey;
 }
 body {
   margin: 15px;
