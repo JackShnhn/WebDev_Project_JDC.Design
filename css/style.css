@@ -101,7 +101,6 @@ input[type="radio"] {
 }
 /*Trying to get text on about page to go to right of image*/
 #bio_graph{
-  text-align:right;
   width : 70%;
 
 }
