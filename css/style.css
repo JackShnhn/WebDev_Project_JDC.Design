@@ -26,8 +26,10 @@ header{
 }
 
 img {
+  align-items:center;
   width: 300px;
   height: 200px;
+  margin: 1.2vw;
 }
 
 
