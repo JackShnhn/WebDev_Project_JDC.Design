@@ -99,9 +99,9 @@ input {
 }
 
 /*about*/
-#bio_graph img{
+.about_text img{
   display: block;
-  width: 25vw;
+  width: 20vw;
   height:auto;
   padding: 5px;
   border-radius:15px ;
@@ -110,13 +110,28 @@ input {
 }
 
 /*Trying to get text on about page to go to right of image*/
-#bio_graph{
+.about_text{
   
-  font-size: 20px;
+  font-size: 25px;
   text-align:left;
   margin-right:5vw;
 
 }
+
+#about_main h1{
+  text-align:center;
+  margin: 50px;
+}
+.about_text #First_Car_Pic{
+  display: block;
+  width: 40vw;
+  height:auto;
+  padding: 5px;
+  border-radius:15px ;
+  border: 2px solid #000000;
+  float:right;
+}
+
 /* colour of submit button changes when you hover over it doesnt work
 #submit:hover{
   background-color:blue;
