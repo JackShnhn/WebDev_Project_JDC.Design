@@ -55,6 +55,22 @@ img {
   color: #000000;
 }
 
+
+/*contact*/
+.radio-group {
+  display: flex;
+  justify-content: space-between; /* Ensures the label and radio button are spaced out */
+  align-items: center; /* Aligns label and radio button vertically */
+  margin-bottom: 10px;
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the div on the page */
+}
+
+/* Ensure radio buttons are smaller and aligned properly */
+input[type="radio"] {
+  width: auto; /* Keeps radio buttons at default size */
+  margin-left: 10px; /* Adds space between label and radio button */
+}
 form {
   text-align:center;
   padding: 15px 15px;
@@ -81,32 +97,24 @@ input {
   font-size:70px;
 
 }
-#john_pic{
+
+/*about*/
+#bio_graph img{
   display: block;
-  margin-right: auto;
-  width: 25%;
+  width: 25vw;
   height:auto;
   padding: 5px;
   border-radius:15px ;
   border: 2px solid #000000;
-}
-.radio-group {
-  display: flex;
-  justify-content: space-between; /* Ensures the label and radio button are spaced out */
-  align-items: center; /* Aligns label and radio button vertically */
-  margin-bottom: 10px;
-  width: 300px; /* Adjust width as needed */
-  margin: 0 auto; /* Centers the div on the page */
+  float:left;
 }
 
-/* Ensure radio buttons are smaller and aligned properly */
-input[type="radio"] {
-  width: auto; /* Keeps radio buttons at default size */
-  margin-left: 10px; /* Adds space between label and radio button */
-}
 /*Trying to get text on about page to go to right of image*/
 #bio_graph{
-  width : 70%;
+  
+  font-size: 20px;
+  text-align:left;
+  margin-right:5vw;
 
 }
 /* colour of submit button changes when you hover over it doesnt work
