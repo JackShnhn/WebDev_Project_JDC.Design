@@ -25,11 +25,18 @@ header{
 	text-align:center;
 }
 
-img {
-  align-items:center;
-  width: 300px;
-  height: 200px;
+.index-cars {
+  width: 20vw;
+  height: 15vw;
   margin: 1.2vw;
+  
+}
+.index-cars:hover {
+  color: #111;
+  background: greenyellow;
+  box-shadow: 0 0 100px greenyellow;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 
