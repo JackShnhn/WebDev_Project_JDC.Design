@@ -28,14 +28,16 @@ header{
 .index-cars {
   width: auto;
   height: 15vw;
-  margin: 1.2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  text-align: center;
   
 }
 .index-cars:hover {
   color: #111;
   background: greenyellow;
   box-shadow: 0 0 100px greenyellow;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
