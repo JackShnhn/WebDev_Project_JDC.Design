@@ -9,21 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: orange;
-        }
-        .image-group img:hover {
-            color: #111; /* This won't affect images, but added for completeness */
-            background: greenyellow; /* This won't work directly; background applies to block elements */
-            box-shadow: 0 0 100px greenyellow;
-            transform: scale(1.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-        }
 
-        .image-group :hover {
-            background: transparent;
+    <style>
+        .list-group-item img {
+            transition: transform 0.3s ease;
         }
+        
+        .list-group-item img:hover {
+            transform: scale(1.1);
+        }
+        body {
+            background-color: orange;        }
     </style>
 </head>
 <body>
@@ -53,14 +49,14 @@
                 <div>
                     <h5>Festive Sale!</h5>
                     <p>Date: December 6th, 2024- December 26th, 2024 </p>
-                    <p>Description: Join us for our huge sale various vintage cars on display aswell as 20% off any car purchases.</p>
+                    <p>Description: Join us for our huge sale various vintage cars on display as well as 20% off any car purchases.</p>
                 </div>
             </li>
             <li class="list-group-item d-flex align-items-center">
                 <img src="https://th.bing.com/th/id/OIP.CfVej99x0pRGtjqYkcqhlgHaFj?rs=1&pid=ImgDetMain" alt="Race Event" class="img-fluid me-3" style="width: 100px; height: 100px;border: 1px solid grey;">
                 <div>
                     <h5>Race to Cure!</h5>
-                    <p>Date: Febuary 20th, 2025</p>
+                    <p>Date: February 20th, 2025</p>
                     <p>Description: A thrilling race event for charity featuring muscle cars vintage car display and a raffle ; don’t miss out!</p>
                 </div>
             </li>
@@ -69,10 +65,9 @@
                 <div>
                     <h5>Garage Guru Car Show</h5>
                     <p>Date: January 10, 2025</p>
-                    <p>Description: A special gathering for car enthusiasts with guest speakers sharing their experiences,knowledge and love for automobiles .</p>
+                    <p>Description: A special gathering for car enthusiasts with guest speakers sharing their experiences, knowledge and love for automobiles.</p>
                 </div>
             </li>
-
         </ul>
     </div>
 
