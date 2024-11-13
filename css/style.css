@@ -117,7 +117,7 @@ input {
   padding: 5px;
   border-radius:15px ;
   border: 2px solid #000000;
-  float:left;
+  text-align:center;
 }
 
 /*Trying to get text on about page to go to right of image*/
@@ -132,7 +132,6 @@ input {
   margin: 50px;
 }
 #First_Car_Pic{
-  float:right;
   display: block;
   padding: 5px;
   border-radius:1vw ;
