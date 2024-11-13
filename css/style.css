@@ -108,6 +108,32 @@ input {
   font-size:70px;
 
 }
+/*events*/
+.event-list-group{
+  border-color:#000000;
+  border:.1vw;
+
+
+}
+.event-list{
+
+  border-style: solid;
+  border-color:#000000;
+  border-width:.1vw;
+
+
+}
+.event-list-group-item img {
+            transition: transform 0.3s ease;
+        }
+        
+.list-group-item img:hover {
+            transform: scale(1.1);
+        }
+        
+       
+
+
 
 /*about*/
 .about_text img{
