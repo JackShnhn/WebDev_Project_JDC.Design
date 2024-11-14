@@ -144,6 +144,25 @@ input {
   
 }
 
+/* info about cars pages*/
+.Car_Info_Images1{
+  border-radius:50%;
+  border:solid;
+  border-width:1vw;
+  margin-top:3vw;
+}
+.Car_Info_Images2{
+  border:solid;
+  border-width:1vw;
+  margin-top:3vw;
+}
+.Car_info_text{
+  margin-top: 3vw;
+  margin-bottom:3vw;
+  text-align:center;
+
+}
+
 
 .event-list-group-item img {
             transition: transform 0.3s ease;
