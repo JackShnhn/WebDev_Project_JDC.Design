@@ -33,6 +33,17 @@ header{
   text-align: center;
   
 }
+@media (max-width: 768px) {
+  .index-cars {
+    height:auto;
+    width: 250px; /* Larger size for smaller screens */
+    margin:1vw;
+    border-style:solid;
+    border-color:#000000;
+    border-width:.5vw;
+    border-radius:2vw;
+  }
+}
 .index-cars:hover {
   color: #111;
   background: greenyellow;
@@ -109,25 +120,36 @@ input {
 
 }
 /*events*/
-.event-list-group{
-  border-color:#000000;
-  border:.1vw;
 
-
+.Event_Image{
+   width: 100px;
+   height: 100px;
+   margin:1vw;
+   border: 1px solid grey;
+   float:left; 
+   
 }
-.event-list{
 
-  border-style: solid;
+
+.event-list-group {
+  margin:.4vw;
+  border-style:solid;
   border-color:#000000;
   border-width:.1vw;
-
-
+  border-radius:2vw;
+  text-align:center;
+  display: flex;
+  
+  justify-content: center;
+  
 }
+
+
 .event-list-group-item img {
             transition: transform 0.3s ease;
         }
         
-.list-group-item img:hover {
+.event-list-group-item img:hover {
             transform: scale(1.1);
         }
         
