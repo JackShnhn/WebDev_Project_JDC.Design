@@ -128,18 +128,22 @@ input {
 .boxes {
   padding: 0px;
   font-size: 70px;
-
 }
 
 /*events*/
 
-.Event_Image {
-  width: 100px;
-  height: 100px;
-  margin: 1vw;
-  border: 1px solid grey;
-  float: left;
+.Event_Image:hover {
+  color: #111;
+  background: greenyellow;
+  box-shadow: 0 0 100px greenyellow;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
+.Event_Image {
+  width: 250px;
+  height: auto;
+  transition: transform 0.3 ease, box-shadow 0.3 ease;
 }
 
 
