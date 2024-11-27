@@ -1,8 +1,9 @@
-.Logo h1{
+.Logo h1 {
   text-align: center;
   font-style: normal;
   color: black;
 }
+
 body {
   margin: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,8 +22,8 @@ body {
   font-style: normal;
 }
 
-header{
-	text-align:center;
+header {
+  text-align: center;
 }
 
 .index-cars {
@@ -31,19 +32,22 @@ header{
   margin-top: 1vw;
   margin-bottom: 1vw;
   text-align: center;
-  
+
 }
+
 @media (max-width: 768px) {
   .index-cars {
-    height:auto;
-    width: 250px; /* Larger size for smaller screens */
-    margin:1vw;
-    border-style:solid;
-    border-color:#000000;
-    border-width:.5vw;
-    border-radius:2vw;
+    height: auto;
+    width: 250px;
+    /* Larger size for smaller screens */
+    margin: 1vw;
+    border-style: solid;
+    border-color: #000000;
+    border-width: .5vw;
+    border-radius: 2vw;
   }
 }
+
 .index-cars:hover {
   color: #111;
   background: greenyellow;
@@ -81,28 +85,35 @@ header{
 /*contact*/
 .radio-group {
   display: flex;
-  justify-content: space-between; /* Ensures the label and radio button are spaced out */
-  align-items: center; /* Aligns label and radio button vertically */
+  justify-content: space-between;
+  /* Ensures the label and radio button are spaced out */
+  align-items: center;
+  /* Aligns label and radio button vertically */
   margin-bottom: 10px;
-  width: 300px; /* Adjust width as needed */
-  margin: 0 auto; /* Centers the div on the page */
+  width: 300px;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Centers the div on the page */
 }
 
 /* Ensure radio buttons are smaller and aligned properly */
 input[type="radio"] {
-  width: auto; /* Keeps radio buttons at default size */
-  margin-left: 10px; /* Adds space between label and radio button */
-}
-form {
-  text-align:center;
-  padding: 15px 15px;
-  
+  width: auto;
+  /* Keeps radio buttons at default size */
+  margin-left: 10px;
+  /* Adds space between label and radio button */
 }
 
-#description{
-  height:50px;
-  width:400px;
-  font-size:14pt;
+form {
+  text-align: center;
+  padding: 15px 15px;
+
+}
+
+#description {
+  height: 50px;
+  width: 400px;
+  font-size: 14pt;
 
 }
 
@@ -114,103 +125,104 @@ input {
   width: 300px;
 }
 
-.boxes{
+.boxes {
   padding: 0px;
-  font-size:70px;
-
+  font-size: 70px;
 }
+
 /*events*/
 
-.Event_Image{
-   width: 100px;
-   height: 100px;
-   margin:1vw;
-   border: 1px solid grey;
-   float:left; 
-   
+.Event_Image:hover {
+  color: #111;
+  background: greenyellow;
+  box-shadow: 0 0 100px greenyellow;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.Event_Image {
+  width: 250px;
+  height: auto;
+  transition: transform 0.3 ease, box-shadow 0.3 ease;
 }
 
 
 .event-list-group {
-  margin:.4vw;
-  border-style:solid;
-  border-color:#000000;
-  border-width:.1vw;
-  border-radius:2vw;
-  text-align:center;
+  margin: .4vw;
+  border-style: solid;
+  border-color: #000000;
+  border-width: .1vw;
+  border-radius: 2vw;
+  text-align: center;
   display: flex;
-  
+
   justify-content: center;
-  
+
 }
 
 /* info about cars pages*/
-.Car_Info_Images1{
-  border-radius:50%;
-  border:solid;
-  border-width:1vw;
-  margin-top:3vw;
-}
-.Car_Info_Images2{
-  border:solid;
-  border-width:1vw;
-  margin-top:3vw;
-}
-.Car_info_text{
+.Car_Info_Images1 {
+  border-radius: 50%;
+  border: solid;
+  border-width: 1vw;
   margin-top: 3vw;
-  margin-bottom:3vw;
-  text-align:center;
+}
+
+.Car_Info_Images2 {
+  border: solid;
+  border-width: 1vw;
+  margin-top: 3vw;
+}
+
+.Car_info_text {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  text-align: center;
 
 }
 
 
 .event-list-group-item img {
-            transition: transform 0.3s ease;
-        }
-        
+  transition: transform 0.3s ease;
+}
+
 .event-list-group-item img:hover {
-            transform: scale(1.1);
-        }
-        
-       
+  transform: scale(1.1);
+}
+
+
 
 
 
 /*about*/
-.about_text img{
+.about_text img {
   display: block;
   width: 20vw;
-  height:auto;
+  height: auto;
   padding: 5px;
-  border-radius:15px ;
+  border-radius: 15px;
   border: 2px solid #000000;
-  text-align:center;
+  text-align: center;
 }
 
 /*Trying to get text on about page to go to right of image*/
-.about_text{
+.about_text {
   font-size: 1.25vw;
-  margin-bottom:1.5vw;
+  margin-bottom: 1.5vw;
   margin-top: 1.5vw;
 }
 
-#about_main h1{
-  text-align:center;
+#about_main h1 {
+  text-align: center;
   margin: 50px;
 }
-#First_Car_Pic{
+
+#First_Car_Pic {
   display: block;
   padding: 5px;
-  border-radius:1vw ;
+  border-radius: 1vw;
   border: 2px solid #000000;
   height: 20vw;
   width: auto;
-  
-}
 
-/* colour of submit button changes when you hover over it doesnt work
-#submit:hover{
-  background-color:blue;
 }
-*/
-
