@@ -1,110 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Events</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<style>
+  <meta charset="utf-8">
+  <title>Events</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
     .Event_Image:hover {
-  color: #111;
-  background: greenyellow;
-  box-shadow: 0 0 100px greenyellow;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+      color: #111;
+      background: greenyellow;
+      box-shadow: 0 0 100px greenyellow;
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
     }
-.Event_Image {
-            width: 250px; 
-            height: auto;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+
+    .Event_Image {
+      width: 250px;
+      height: auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
 
-.topnav {
-  overflow: hidden;
-  background-color: darkcyan;
-}
+    .topnav {
+      overflow: hidden;
+      background-color: darkcyan;
+    }
 
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-.topnav a:hover {
-  background-color: lightseagreen;
-  color: black;
-}
+    .topnav a:hover {
+      background-color: lightseagreen;
+      color: black;
+    }
 
-.topnav a.active {
-  background-color: lightseagreen;
-  color: #000000;
-}
-    </style>
+    .topnav a.active {
+      background-color: lightseagreen;
+      color: #000000;
+    }
+  </style>
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <div class="text-center mb-4">
-        <h1>Wheels on Fire</h1>
+  <div class="text-center mb-4">
+    <h1>Wheels on Fire</h1>
+  </div>
+
+  <nav>
+    <div class="topnav">
+      <a href="../index.html">Home</a>
+      <a class="active" href="events.html">Events</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
-    
-    <nav>
-        <div class="topnav">
-            <a href="../index.html">Home</a>
-            <a class="active" href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="text-center my-4">
+    <h2>Upcoming Events</h2>
+  </header>
+
+  <div class="container-fluid event-page">
+    <div class="row">
+      <div class="event-list-group d-flex  col-12 align-items-center">
+        <img
+          src="https://media.istockphoto.com/id/1280020886/vector/vector-picture-with-red-car-and-christmas-gifts-christmas-picture-red-pickup-new-year.jpg?s=612x612&w=0&k=20&c=togBpxp65Pg0PrbJmXRa9uf6K1oVELsewsnIyvkzKyo="
+          alt="Christmas Sale" class="img-fluid me-3 float-start Event_Image">
+
+        <div>
+          <h5>Festive Sale!</h5>
+          <p>Date: December 6th, 2024- December 26th, 2024 </p>
+          <p>Description: Join us for our huge sale various vintage cars on display as well as 20% off any car purchases
+            and car accesories.</p>
+
         </div>
-    </nav>
-    
-    <header class="text-center my-4">
-        <h2>Upcoming Events</h2>
-    </header>
-    
-    <div  class="container-fluid event-page" >
-		<div class = "row">
-			<div class="event-list-group d-flex  col-12 align-items-center">
-					<img src="https://media.istockphoto.com/id/1280020886/vector/vector-picture-with-red-car-and-christmas-gifts-christmas-picture-red-pickup-new-year.jpg?s=612x612&w=0&k=20&c=togBpxp65Pg0PrbJmXRa9uf6K1oVELsewsnIyvkzKyo=" 
-						 alt="Christmas Sale" class="img-fluid me-3 float-start Event_Image">
-				
-				<div>
-						<h5>Festive Sale!</h5>
-						<p>Date: December 6th, 2024- December 26th, 2024 </p>
-						<p>Description: Join us for our huge sale various vintage cars on display as well as 20% off any car purchases and car accesories.</p>
-			
-				</div>
-			</div>	
-			<div class="event-list-group d-flex col-12 align-items-center">
-					<img src="https://th.bing.com/th/id/OIP.CfVej99x0pRGtjqYkcqhlgHaFj?rs=1&pid=ImgDetMain" alt="Race Event" class="img-fluid me-3 Event_Image" >
-					<div>
-						<h5>Race to Cure!</h5>
-						<p>Date: February 20th, 2025</p>
-						<p>Description: A thrilling race event for charity featuring muscle cars vintage car display and a raffle ; don’t miss out!</p>
-			
-					</div>
-			</div>
-				<div class="event-list-group d-flex col-12 align-items-center">
-					<img src="https://media.gettyimages.com/id/1201625694/photo/concept-of-cuba-attractions-headlight-of-old-car-in-havana-cuba.jpg?s=612x612&w=0&k=20&c=YR6gz9_fIwIMs-_DQ-d1P4Umx-kLmFUiJBytzNZpoMQ=" alt="Car Show" class="img-fluid me-3 Event_Image">
-					<div>
-						<h5>Garage Guru Car Show</h5>
-						<p>Date: January 10, 2025</p>
-						<p>Description: A special gathering for car enthusiasts with guest speakers sharing their experiences, knowledge and love for automobiles.</p>
-					</div>
-				</div>
-				
-		</div>
-    </div>
+      </div>
+      <div class="event-list-group d-flex col-12 align-items-center">
+        <img src="https://th.bing.com/th/id/OIP.CfVej99x0pRGtjqYkcqhlgHaFj?rs=1&pid=ImgDetMain" alt="Race Event"
+          class="img-fluid me-3 Event_Image">
+        <div>
+          <h5>Race to Cure!</h5>
+          <p>Date: February 20th, 2025</p>
+          <p>Description: A thrilling race event for charity featuring muscle cars vintage car display and a raffle ;
+            don’t miss out!</p>
 
-    <footer>
-        <h5>O'Reilly Ltd.</h5>
-    </footer>
+        </div>
+      </div>
+      <div class="event-list-group d-flex col-12 align-items-center">
+        <img
+          src="https://media.gettyimages.com/id/1201625694/photo/concept-of-cuba-attractions-headlight-of-old-car-in-havana-cuba.jpg?s=612x612&w=0&k=20&c=YR6gz9_fIwIMs-_DQ-d1P4Umx-kLmFUiJBytzNZpoMQ="
+          alt="Car Show" class="img-fluid me-3 Event_Image">
+        <div>
+          <h5>Garage Guru Car Show</h5>
+          <p>Date: January 10, 2025</p>
+          <p>Description: A special gathering for car enthusiasts with guest speakers sharing their experiences,
+            knowledge and love for automobiles.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <h5>O'Reilly Ltd.</h5>
+  </footer>
 </body>
+
 </html>
