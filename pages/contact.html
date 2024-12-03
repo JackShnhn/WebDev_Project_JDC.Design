@@ -1,137 +1,71 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Contact</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .error {
-            color: red;
-            display: none;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem 0;
-        }
-    </style>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <div class="Logo text-center">
-        <h1>Wheels on Fire </h1>
-    </div>
-    <nav>
-        <div class="topnav">
-            <a href="../index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a class="active" href="contact.html">Contact</a>
-        </div>
-    </nav>
-    <header>
-        <h1 class="text-center">Contact</h1>
-    </header>
-    <div class="container"> <!-- Change to Bootstrap's container class -->
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="fname">First Name:</label>
-                <input type="text" id="fname" class="form-control" placeholder="Enter your first name" required>
-                <span class="error" id="fnameError">Please enter your first name</span>
-            </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<div class="Logo">
+		<h1>Wheels on Fire </h1>
+	</div>
+	<nav>
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="events.html">Events</a>
+			<a href="about.html">About</a>
+			<a class="active" href="contact.html">Contact</a>
+		</div>
+	</nav>
+	<header>
+		<h1>Contact</h1>
+	</header>
+	<div id="main container-fluid">
+		<form>
+			<label for="fname">First Name:</label><br>
+			<input type="text" id="fname" placeholder="Enter your first name">
+			<label for="lname">Last Name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Enter Your Last Name"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="emailInput" placeholder="Enter your email">
+			<p id="feedback" class="invalid"></p><br>
+			<label for="text">Reason for inquiry:</label>
+			<select name="reason" id="reason">
+				<option value="general">General</option>
+				<option value="feedback">Feedback</option>
+				<option value="tech support">Tech Support</option>
+			</select>
+			<br><br>
+			<!-- <div class="radio-group">
+					<label for="car_prices">Car prices</label>
+					<input class="boxes" type="radio" id="car_prices" name="Inquiry_reason" value="CAR_PRICES"><br>
+				
+					<label for="car_recomendations">Car Recommendations</label>
+					<input class="boxes" type="radio" id="car_recomendations" name="Inquiry_reason" value="CAR_RECOMENDATIONS">	<br>							
+				
+					<label for="car_problems">Problems with cars</label>
+					<input class="boxes" type="radio" id="car_problems" name="Inquiry_reason" value="CAR_PROBLEMS">	<br>						
+				
+					<label for="other">Other</label>
+					<input class="boxes" type="radio" id="other" name="Inquiry_reason" value="OTHER"><br>
+				</div> -->
 
-            <div class="form-group">
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" class="form-control" placeholder="Enter your last name" required>
-                <span class="error" id="lnameError">Please enter your last name</span>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                <span class="error" id="emailError">Please enter a valid email address</span>
-            </div>
-
-            <div class="form-group">
-                <label for="reason">Reason for Inquiry:</label>
-                <select name="reason" id="reason" class="form-control" required>
-                    <option value="" disabled selected>Select your reason</option>
-                    <option value="general">General</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="tech_support">Tech Support</option>
-                </select>
-                <span class="error" id="reasonError">Please select a reason for inquiry</span>
-            </div>
-            
-            <div class="form-group">
-                <label for="description">Description:</label>
-                <textarea id="description" class="form-control" rows="4" placeholder="Type your message here..." required></textarea>
-                <span class="error" id="descriptionError">Please provide a description</span>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <p>For any inquiries, you can contact me at my email address <a href="mailto:john.oreilly@gmail.com">john.oreilly@gmail.com</a></p>
-    </div>
-    <footer>
-        <h5>O'Reilly Ltd.</h5>
-    </footer>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            let isValid = true;
-
-            document.querySelectorAll('.error').forEach(e => e.style.display = 'none');
-
-            
-            if (document.getElementById('fname').value.trim() === '') {
-                document.getElementById('fnameError').style.display = 'block';
-                isValid = false;
-            }
-
-           
-            if (document.getElementById('lname').value.trim() === '') {
-                document.getElementById('lnameError').style.display = 'block';
-                isValid = false;
-            }
-
-            
-            const emailInput = document.getElementById('email').value.trim();
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex
-            if (!emailPattern.test(emailInput)) {
-                document.getElementById('emailError').style.display = 'block';
-                isValid = false;
-            }
-
-            
-            if (document.getElementById('reason').value === "") {
-                document.getElementById('reasonError').style.display = 'block';
-                isValid = false;
-            }
-
-            
-            if (document.getElementById('description').value.trim() === '') {
-                document.getElementById('descriptionError').style.display = 'block';
-                isValid = false;
-            }
-
-            
-            if (!isValid) {
-                event.preventDefault();
-            }
-        });
-    </script>
+			<label for="description">Description:</label>
+			<input type="text" id="description" name="description"><br>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+		<p>For any inquires you can contact me at my email address john.oreilly@gmail.com </p>
+	</div>
+	<footer>
+		<h5>O'Reilly Ltd. </h5>
+	</footer>
 </body>
 
 </html>
